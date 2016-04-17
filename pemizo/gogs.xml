@@ -21,7 +21,7 @@
     [b][span style=\'color: #E80000;\']Directions:[/span][/b][br]
     [b]/data[/b] : this is the path where Gogs will store its data files.
   </Description>
-  <Registry>https://hub.docker.com/r/gogs/gogs/</Registry>
+  <Registry>https://registry.hub.docker.com/u/gogs/gogs/</Registry>
   <GitHub>https://github.com/gogits/gogs</GitHub>
   <Repository>gogs/gogs</Repository>
   <Support>http://gogs.io/docs/intro/troubleshooting.html</Support>
