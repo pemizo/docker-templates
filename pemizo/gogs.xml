@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Date>2016-04-17</Date>
+  <Beta>False</Beta>
+  <Category>Development:</Category>
+  <Name>Gogs</Name>
+  <Project>https://www.gogs.io/</Project>
+  <Changes>
+[center][img width='155px' src='https://gogs.io/img/favicon.ico'][/center]
+
+[center][font size=4]Gogs Change Log[/font][/center]
+
+[font size=3]2015.06.15[/font]
+- Initial Release (Gogs version 0.9.20)
+  </Changes>
+  <Overview>
+    Gogs (Go Git Service) is a painless self-hosted Git service.
+  </Overview>
+  <Description>
+    The goal of this project is to make the easiest, fastest, and most painless way of setting up a self-hosted Git service. With Go, this can be done with an independent binary distribution across ALL platforms that Go supports, including Linux, Mac OS X, Windows and ARM. 
+    [b][span style=\'color: #E80000;\']Directions:[/span][/b][br]
+    [b]/data[/b] : this is the path where Gogs will store its data files.
+  </Description>
+  <Registry>https://hub.docker.com/r/gogs/gogs/</Registry>
+  <GitHub>https://github.com/gogits/gogs</GitHub>
+  <Repository>gogits/gogs</Repository>
+  <Support>http://gogs.io/docs/intro/troubleshooting.html</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8022</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Gogs</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <Icon>https://gogs.io/img/favicon.ico</Icon>
+</Container>

@@ -1,2 +1,2 @@
 # docker-templates
-Docker templates for unRAID
+Docker templates for unRAID version 6
