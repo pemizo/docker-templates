@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Date>2016-04-18</Date>
+  <Beta>False</Beta>
+  <Category>Wiki:</Category>
+  <Name>DokuWiki</Name>
+  <Project>https://www.dokuwiki.org/</Project>
+  <Changes>
+[center][img width='155px' src='https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png'][/center]
+
+[center][font size=4]DokuWiki Change Log[/font][/center]
+
+[font size=3]2015.06.15[/font]
+- Initial Release (DokuWiki stable version 2015-08-10a "Detrius")
+  </Changes>
+  <Overview>
+    Gogs (Go Git Service) is a painless self-hosted Git service.
+  </Overview>
+  <Description>
+    DokuWiki is a simple to use and highly versatile Open Source wiki software that doesn't require a database. It is loved by users for its clean and readable syntax. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in access controls and authentication connectors make DokuWiki especially useful in the enterprise context and the large number of plugins contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.[br]
+    [b][span style=\'color: #E80000;\']Directions:[/span][/b][br]
+    [b]/var/www/html/conf[/b] : this is the path where DokuWiki will store its configuration files.[br]
+    [b]/var/www/html/data/pages[/b] [br]
+    [b]/var/www/html/data/meta[/b] [br]
+    [b]/var/www/html/data/media[/b] [br]
+    [b]/var/www/html/data/media_attic[/b] [br]
+    [b]/var/www/html/data/media_meta[/b] [br]
+    [b]/var/www/html/lib/plugins[/b] [br]
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/vimagick/dokuwiki/</Registry>
+  <GitHub>https://github.com/vimagick/dockerfiles</GitHub>
+  <Repository>vimagick/dokuwiki</Repository>
+  <Support>http://www.dokuwiki.org</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8022</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/DokuWiki/conf</HostDir>
+      <ContainerDir>/var/www/html/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/DokuWiki/data/pages</HostDir>
+      <ContainerDir>/var/www/html/data/pages</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/DokuWiki/data/meta</HostDir>
+      <ContainerDir>/var/www/html/data/meta</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/DokuWiki/data/media</HostDir>
+      <ContainerDir>/var/www/html/data/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/DokuWiki/data/media_attic</HostDir>
+      <ContainerDir>/var/www/html/data/media_attic</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/DokuWiki/data/media_meta</HostDir>
+      <ContainerDir>/var/www/html/data/media_meta</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/DokuWiki/lib/plugins</HostDir>
+      <ContainerDir>/var/www/html/lib/plugins</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Icon>https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png</Icon>
+</Container>
