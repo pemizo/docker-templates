@@ -38,8 +38,8 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8022</HostPort>
-        <ContainerPort>22</ContainerPort>
+        <HostPort>8000</HostPort>
+        <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
