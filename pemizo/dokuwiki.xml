@@ -38,7 +38,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8000</HostPort>
+        <HostPort>8001</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -82,6 +82,6 @@
     </Volume>
   </Data>
   <Version></Version>
-  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8001]/</WebUI>
   <Icon>https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png</Icon>
 </Container>
