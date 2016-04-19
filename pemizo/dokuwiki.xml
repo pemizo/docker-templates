@@ -22,9 +22,7 @@
   <Description>
     DokuWiki is a simple to use and highly versatile Open Source wiki software that doesn't require a database. It is loved by users for its clean and readable syntax. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in access controls and authentication connectors make DokuWiki especially useful in the enterprise context and the large number of plugins contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.[br]
     [b][span style=\'color: #E80000;\']Directions:[/span][/b][br]
-    [b]/srv/dokuwiki/conf[/b] : this is the path where DokuWiki will store its configuration files.[br]
-    [b]/srv/dokuwiki/data[/b] : this is the path where DokuWiki will store its data files.[br]
-    [b]/srv/dokuwiki/lib/plugins[/b] : this is the path where DokuWiki will store its plugin files.[br]
+    [b]/dokuwiki-storage[/b] : this is the path where DokuWiki will store its configuration, data and plugin files.
   </Description>
   <Registry>https://registry.hub.docker.com/u/stlemme/dokuwiki/</Registry>
   <GitHub>https://github.com/stlemme/dokuwiki-docker</GitHub>
@@ -45,18 +43,8 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/DokuWiki/conf</HostDir>
-      <ContainerDir>/srv/dokuwiki/conf</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/DokuWiki/data</HostDir>
-      <ContainerDir>/srv/dokuwiki/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/DokuWiki/lib/plugins</HostDir>
-      <ContainerDir>/srv/dokuwiki/lib/plugins</ContainerDir>
+      <HostDir>/mnt/user/appdata/DokuWiki</HostDir>
+      <ContainerDir>/dokuwiki-storage</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
