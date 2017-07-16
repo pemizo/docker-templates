@@ -20,8 +20,8 @@
     Being a fork of a leading open source software system, it is notable for being led by the original developers of MySQL, who forked it due to concerns over its acquisition by Oracle. Contributors are required to share their copyright with the MariaDB Foundation.
   </Description>
   <Registry>https://hub.docker.com/r/_/mariadb/</Registry>
-  <GitHub>https://github.com/docker-library/mariadb/tree/master/10.2</GitHub>
-  <Repository>docker-library/mariadb</Repository>
+  <GitHub>https://github.com/docker-library/mariadb/tree/master/10.2/</GitHub>
+  <Repository>mariadb</Repository>
   <Support>https://hub.docker.com/r/library/mariadb/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
