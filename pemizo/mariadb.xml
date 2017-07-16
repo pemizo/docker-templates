@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Date>2017-07-17</Date>
+  <Beta>False</Beta>
+  <Category>Database:</Category>
+  <Name>MariaDB</Name>
+  <Project>https://mariadb.org/</Project>
+  <Changes>
+[center][img width='155px' src='https://raw.githubusercontent.com/docker-library/docs/74e3b3d4d60389208732dbd2c95145868111d959/mariadb/logo.png'][/center]
+
+[center][font size=4]MariaDB Change Log[/font][/center]
+
+[font size=3]2017.07.17[/font]
+- Initial Release (MariaDB 10.2)
+  </Changes>
+  <Overview>
+    MariaDB is a community-developed fork of the MySQL relational database management system intended to remain free under the GNU GPL. 
+  </Overview>
+  <Description>
+    Being a fork of a leading open source software system, it is notable for being led by the original developers of MySQL, who forked it due to concerns over its acquisition by Oracle. Contributors are required to share their copyright with the MariaDB Foundation.
+  </Description>
+  <Registry>https://hub.docker.com/r/_/mariadb/</Registry>
+  <GitHub>https://github.com/docker-library/mariadb/tree/master/10.2</GitHub>
+  <Repository>docker-library/mariadb</Repository>
+  <Support>https://hub.docker.com/r/library/mariadb/</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>MYSQL_ROOT_PASSWORD</Name>
+      <Value>root_password</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3306</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/mariadb</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>10.2</Version>
+  <WebUI></WebUI>
+  <Icon>https://mariadb.org/wp-content/uploads/2017/03/MariaDB-Foundation-vertical.png</Icon>
+</Container>
