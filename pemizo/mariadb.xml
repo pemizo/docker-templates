@@ -6,7 +6,7 @@
   <Name>MariaDB</Name>
   <Project>https://mariadb.org/</Project>
   <Changes>
-[center][img width='155px' src='https://raw.githubusercontent.com/docker-library/docs/74e3b3d4d60389208732dbd2c95145868111d959/mariadb/logo.png'][/center]
+[center][img width='155px' src='https://mariadb.org/wp-content/uploads/2017/03/MariaDB-Foundation-vertical.png'][/center]
 
 [center][font size=4]MariaDB Change Log[/font][/center]
 
@@ -21,7 +21,7 @@
   </Description>
   <Registry>https://hub.docker.com/r/_/mariadb/</Registry>
   <GitHub>https://github.com/docker-library/mariadb/tree/master/10.2/</GitHub>
-  <Repository>mariadb</Repository>
+  <Repository>library/mariadb:latest</Repository>
   <Support>https://hub.docker.com/r/library/mariadb/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
