@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Date>2016-04-18</Date>
+  <Date>2019-01-06</Date>
   <Beta>False</Beta>
   <Category>Web:</Category>
   <Name>DokuWiki</Name>
@@ -15,6 +15,10 @@
 
 [font size=3]2015.06.15[/font]
 - Initial Release (DokuWiki stable version 2015-08-10a "Detrius")
+
+[font size=3]2019.01.06[/font]
+- Update to a new docker source and new Release (DokuWiki stable version 2018-04-22a)
+
   </Changes>
   <Overview>
     DokuWiki is a simple to use wiki that doesn't require a database.
@@ -22,11 +26,15 @@
   <Description>
     DokuWiki is a simple to use and highly versatile Open Source wiki software that doesn't require a database. It is loved by users for its clean and readable syntax. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in access controls and authentication connectors make DokuWiki especially useful in the enterprise context and the large number of plugins contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.[br]
     [b][span style=\'color: #E80000;\']Directions:[/span][/b][br]
-    [b]/dokuwiki-storage[/b] : this is the path where DokuWiki will store its configuration, data and plugin files.
+    [b]/dokuwiki/data[/b] : this is the path where DokuWiki will store its data files.
+    [b]/dokuwiki/conf[/b] : this is the path where DokuWiki will store its configuration files.
+    [b]/dokuwiki/lib/plugins[/b] : this is the path where DokuWiki will store its plugin files.
+    [b]/dokuwiki/lib/tpl[/b] : this is the path where DokuWiki will store its template files.
+    [b]/var/log[/b] : this is the path where DokuWiki container will store its logs.
   </Description>
-  <Registry>https://registry.hub.docker.com/u/stlemme/dokuwiki/</Registry>
-  <GitHub>https://github.com/stlemme/dokuwiki-docker</GitHub>
-  <Repository>stlemme/dokuwiki</Repository>
+  <Registry>https://registry.hub.docker.com/u/mprasil/dokuwiki/</Registry>
+  <GitHub>https://github.com/mprasil/docker_dokuwiki</GitHub>
+  <Repository>mprasil/dokuwiki</Repository>
   <Support>http://www.dokuwiki.org</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
