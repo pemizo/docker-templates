@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Date>2016-11-05</Date>
+  <Beta>False</Beta>
+  <Category>Web:</Category>
+  <Name>duply</Name>
+  <Project>http://duply.net/</Project>
+  <Changes>
+[center][img width='155px' src='http://duply.net/wiki/skins/common/images/wiki.png'][/center]
+
+[center][font size=4]duply Change Log[/font][/center]
+
+[font size=3]2016.11.05[/font]
+- Initial Release 
+  </Changes>
+  <Overview>
+    duply is a frontend for the duplicity backup solution.
+  </Overview>
+  <Description>
+    duply is a frontend for the mighty duplicity magic. duplicity is a python based shell application that makes encrypted incremental backups to remote storages. Different backends like ftp, sftp, imap, s3 and others are supported. See duplicity manpage for a complete list of backends and features. [br] 
+    [b][span style=\'color: #E80000;\']Directions:[/span][/b][br]
+    [b]/root[/b] : this is the path where duply will store its configuration files[br]
+    [b]/backup[/b] : this is the path of the files to backup [br]
+    [b]/restore[/b] : this is the path in which duply will save the restored files[br]
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/kurthuwig/duply/</Registry>
+  <GitHub>https://github.com/kurthuwig/docker-duply</GitHub>
+  <Repository>kurthuwig/duply</Repository>
+  <Support>https://hub.docker.com/r/kurthuwig/duply/</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/duply</HostDir>
+      <ContainerDir>/root</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/backup</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/restore</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <Icon>http://duply.net/wiki/skins/common/images/wiki.png</Icon>
+</Container>
