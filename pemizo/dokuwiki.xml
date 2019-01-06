@@ -51,8 +51,28 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/DokuWiki</HostDir>
-      <ContainerDir>/dokuwiki-storage</ContainerDir>
+      <HostDir>/mnt/user/appdata/dokuwiki/data</HostDir>
+      <ContainerDir>/dokuwiki/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/dokuwiki/conf</HostDir>
+      <ContainerDir>/dokuwiki/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/dokuwiki/plugins</HostDir>
+      <ContainerDir>/dokuwiki/lib/plugins</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/dokuwiki/tpl</HostDir>
+      <ContainerDir>/dokuwiki/lib/tpl</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/dokuwiki/log</HostDir>
+      <ContainerDir>/var/log</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
