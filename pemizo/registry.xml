@@ -21,6 +21,7 @@
   <Support>https://docs.docker.com/registry/deploying/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <ExtraParams>-h registry</ExtraParams>
   <Environment>
     <Variable>
       <Value>0.0.0.0:443</Value>
