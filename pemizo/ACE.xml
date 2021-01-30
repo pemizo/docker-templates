@@ -6,7 +6,7 @@
   <Name>ACEmulator</Name>
   <Project>https://emulator.ac/</Project>
   <Changes>
-[center][img width='155px' src='https://avatars.githubusercontent.com/u/24881359?s=200&v=4'][/center]
+[center][img width='155px' src='https://avatars.githubusercontent.com/u/24881359?s=200'][/center]
 
 [center][font size=4]ACEmulator Change Log[/font][/center]
 
@@ -19,11 +19,14 @@
   <Description>
     Welcome to ACEmulator, an open source server emulator and support toolset for the M.M.O.R.P.G. Asheron's Call rebuilt from the ground up, by the community, following the game world shutdown on January 31st, 2017.
     [b][span style=\'color: #E80000;\']Directions:[/span][/b][br]
-    [b]/data[/b] : this is the path where 
+    [b]/ace/Config[/b] : path for Configuration files
+    [b]/ace/Content[/b] : path for Content files
+    [b]/ace/Dats[/b] : path for the DAT-Files
+    [b]/ace/Logs[/b] : path for log files
   </Description>
   <Registry>https://registry.hub.docker.com/r/acemulator/ace</Registry>
   <GitHub>https://www.github.com/ACEmulator/ACE</GitHub>
-  <Repository>ACEmulator/ACE</Repository>
+  <Repository>acemulator/ace</Repository>
   <Support>https://github.com/ACEmulator/ACE/wiki</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -67,5 +70,5 @@
   </Data>
   <Version></Version>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
-  <Icon>https://avatars.githubusercontent.com/u/24881359?s=200&v=4</Icon>
+  <Icon>https://avatars.githubusercontent.com/u/24881359?s=200</Icon>
 </Container>
